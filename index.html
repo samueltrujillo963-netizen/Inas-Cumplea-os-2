@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ina's Cumpleaños</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#f4258c", 
+              "secondary-orange": "#f97316",
+              "secondary-green": "#22c55e",
+              "secondary-blue": "#3b82f6",
+              "background-light": "#f8f5f7",
+              "background-dark": "#221019",
+              // Mappings for existing components compatibility
+              secondary: "#22c55e",
+              accent: "#f97316",
+              highlight: "#3b82f6",
+              "surface-light": "#ffffff",
+              "surface-dark": "#2c1a25",
+              // New specific colors for About page
+              "text-main": "#1c0d14",
+              "text-light": "#fcf8fa",
+              "accent-subtle": "#f4e7ed",
+              "accent-subtle-dark": "#3d1e2e",
+              // Specific colors for Contact page
+              "card-light": "#ffffff",
+              "card-dark": "#2d1b24",
+              "border-light": "#f4e7ed",
+              "border-dark": "#3d2b34",
+              "text-sub-light": "#9c4973", // Secondary text color from contact design
+              "text-sub-dark": "#dcb4c7",
+              "text-main-dark": "#fceff4",
+            },
+            fontFamily: {
+              display: ['"Plus Jakarta Sans"', 'sans-serif'],
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              fredoka: ['"Fredoka One"', 'cursive'],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              "xl": "1rem",
+              "2xl": "1.5rem",
+              "3xl": "2rem",
+            },
+            animation: {
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .text-gradient {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #221019; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #f4258c; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #db2777; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body class="bg-background-light dark:bg-background-dark text-[#1c0d14] dark:text-white font-sans transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>
